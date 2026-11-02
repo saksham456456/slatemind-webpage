@@ -3,14 +3,14 @@
 > SlateMind is a free web app where an AI teacher writes each lesson on an animated blackboard, then quizzes the learner. It adds XP, levels, badges and daily streaks. It is early-stage and built by one student developer in Faridabad, India.
 
 ## What it does today
-- Type any topic and watch a short lesson written in chalk handwriting, with headings, bullets, formulas, circled key ideas and simple diagrams.
+- Type any topic and watch a short lesson written in chalk handwriting, with headings, bullets, formulas and highlighted key ideas.
 - Auto-generated 3-question quiz, glossary of key terms and a fun fact for each lesson.
-- Follow-up questions answered on the board.
-- Gamification: 10 levels, 16 badges, daily streaks, daily challenge.
+- Follow-up questions about a topic (beta, still being improved).
+- Gamification: levels, 16 badges, daily streaks, daily challenge.
 - Save a lesson as a PNG. No account needed; progress is stored in the browser.
 
 ## Demo
-- 56-second screen recording of the real app: {{SITE_URL}}/assets/demo.mp4 (sound effects only, no narration).
+- 54-second screen recording of the real app: https://slatemind-webpage.vercel.app/assets/demo.mp4 (sound effects only, no narration).
 
 ## Not available yet (planned)
 CBSE chapter paths for Classes 9-12, Hindi/Hinglish lessons, accounts with progress sync, shareable lesson clips, teacher mode, paid Pro plan. No paid plan exists today and nothing is for sale.
@@ -19,10 +19,11 @@ CBSE chapter paths for Classes 9-12, Hindi/Hinglish lessons, accounts with progr
 Topics typed by the user are sent to the SlateMind server and to Groq, the AI provider that generates lessons. No accounts, no ads. AI output can contain mistakes.
 
 ## Links
-- App and landing page: {{SITE_URL}}/
+- Website: https://slatemind-webpage.vercel.app/
+- App: https://slate-mind.vercel.app
 - Source code (Apache 2.0): https://github.com/saksham456456/Slate-Mind
 - Maker: Saksham Mogha, https://github.com/saksham456456
-- Privacy Policy: {{SITE_URL}}/privacy
-- Terms of Use: {{SITE_URL}}/terms
-- Cookies and storage: {{SITE_URL}}/cookies
-- Contact: https://saksham-mogha.vercel.app/contact
+- Privacy Policy: https://slatemind-webpage.vercel.app/privacy
+- Terms of Use: https://slatemind-webpage.vercel.app/terms
+- Cookies and storage: https://slatemind-webpage.vercel.app/cookies
+- Contact form: https://saksham-mogha.vercel.app/contact

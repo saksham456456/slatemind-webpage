@@ -1,6 +1,6 @@
 # Deploying the SlateMind site
 
-1. Run `python3 configure.py --site ... --app ... --owner ...` (see top of the file). It fills in every placeholder.
+1. Run `python3 configure.py --site ... --app ... --email ... --owner ... --address ...` (see top of the file). It fills in every placeholder.
 2. Create a new Vercel project from this folder (no build command, output = this folder). Point your domain at it.
 3. Keep the app as a separate Vercel project (for example at app.yourdomain.com) and use that as `--app`.
 4. Open every page on a phone, check the Menu, the sample-lesson buttons and the legal pages.
