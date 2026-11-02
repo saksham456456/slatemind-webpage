@@ -1,12 +1,13 @@
-
 :root{--bg:#f3f5f1;--ink:#17211e;--muted:#46564f;--line:#cdd6cf;--board:#1b2724;--chalk:#f1efe6;--hand:"Segoe Print","Bradley Hand","Chalkboard SE","Comic Sans MS",cursive;--sans:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color-scheme:light}
 @media (prefers-color-scheme:dark){:root{--bg:#111815;--ink:#e8ede9;--muted:#a9b8b0;--line:#2c3a34;color-scheme:dark}}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 var(--sans);padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 a{color:inherit}:focus-visible{outline:3px solid #2f7fd1;outline-offset:3px;border-radius:4px}
 .skip{position:absolute;left:-999px;top:8px;background:#f2d98b;color:#17211e;padding:8px 14px;border-radius:6px}.skip:focus{left:8px}
-header{background:var(--board);padding:16px 22px}header a{font:700 22px var(--hand);color:var(--chalk);text-decoration:none}
+header{background:var(--board);padding:12px 22px;display:flex;justify-content:space-between;align-items:center}header a{font:700 22px var(--hand);color:var(--chalk);text-decoration:none}
 main{max-width:760px;margin:0 auto;padding:40px 22px 64px}
 h1{font:700 clamp(30px,5vw,42px)/1.15 var(--hand);margin:0 0 6px}h2{font:700 22px/1.3 var(--sans);margin:36px 0 8px}
 .meta{color:var(--muted);margin:0 0 28px}p,li{margin:0 0 12px}ul{padding-left:22px}
 table{width:100%;border-collapse:collapse;font-size:16px}th,td{text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid var(--line);vertical-align:top}
 footer{border-top:1px solid var(--line);padding:24px 22px;text-align:center;color:var(--muted);font-size:15px}footer a{display:inline-block;padding:8px 10px}
+header a.hl{font:800 15px var(--sans);background:#f2d98b;color:#17211e;padding:10px 18px;border-radius:999px;border:2px solid #17211e;box-shadow:3px 3px 0 #a98b34;min-height:44px;display:inline-flex;align-items:center}
+.nf{text-align:center;padding:90px 22px}.nf a.b{display:inline-block;margin-top:18px;padding:12px 22px;border-radius:10px;background:#17211e;color:#f3f5f1;text-decoration:none;font-weight:700}

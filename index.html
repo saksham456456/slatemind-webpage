@@ -6,19 +6,21 @@
 <title>SlateMind – Watch any topic get taught on a blackboard</title>
 <meta name="description" content="SlateMind is an AI teacher that writes each lesson on a blackboard, then quizzes you with XP, streaks and badges. Free to try.">
 <meta name="theme-color" content="#1b2724">
-<link rel="canonical" href="{{SITE_URL}}/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:locale" content="en_IN">
+<link rel="canonical" href="https://slatemind-webpage.vercel.app/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="SlateMind">
 <meta property="og:title" content="SlateMind – Watch any topic get taught on a blackboard">
 <meta property="og:description" content="An AI teacher that writes each lesson on a blackboard, then quizzes you. Free to try, no sign-up.">
-<meta property="og:url" content="{{SITE_URL}}/">
-<meta property="og:image" content="{{SITE_URL}}/og.png">
+<meta property="og:url" content="https://slatemind-webpage.vercel.app/">
+<meta property="og:image" content="https://slatemind-webpage.vercel.app/og.png">
 <meta property="og:image:alt" content="SlateMind: an AI teacher that writes lessons on a blackboard">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{{SITE_URL}}/og.png">
+<meta name="twitter:image" content="https://slatemind-webpage.vercel.app/og.png">
 <meta name="twitter:title" content="SlateMind – Watch any topic get taught on a blackboard">
 <meta name="twitter:description" content="An AI teacher that writes each lesson on a blackboard, then quizzes you. Free to try, no sign-up.">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SlateMind","url":"{{SITE_URL}}/","description":"An AI teacher that writes each lesson on a blackboard, then quizzes the learner with XP, streaks and badges.","applicationCategory":"EducationalApplication","operatingSystem":"Any (web browser)","inLanguage":"en","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"license":"https://www.apache.org/licenses/LICENSE-2.0","video":{"@type":"VideoObject","name":"SlateMind product demo","description":"A 56-second screen recording of SlateMind writing a lesson on a blackboard, then running a quiz.","thumbnailUrl":"{{SITE_URL}}/assets/demo-poster.webp","contentUrl":"{{SITE_URL}}/assets/demo.mp4","uploadDate":"2026-08-12","duration":"PT56S"},"screenshot":["{{SITE_URL}}/assets/lesson.webp","{{SITE_URL}}/assets/badges.webp"],"codeRepository":"https://github.com/saksham456456/Slate-Mind","author":{"@type":"Person","name":"Saksham Mogha","url":"https://github.com/saksham456456"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SlateMind","url":"https://slatemind-webpage.vercel.app/","description":"An AI teacher that writes each lesson on a blackboard, then quizzes the learner with XP, streaks and badges.","applicationCategory":"EducationalApplication","operatingSystem":"Any (web browser)","inLanguage":"en","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"license":"https://www.apache.org/licenses/LICENSE-2.0","video":{"@type":"VideoObject","name":"SlateMind product demo","description":"A 54-second screen recording of SlateMind writing a lesson on a blackboard, then running a quiz.","thumbnailUrl":"https://slatemind-webpage.vercel.app/assets/demo-poster.webp","contentUrl":"https://slatemind-webpage.vercel.app/assets/demo.mp4","uploadDate":"2026-08-12","duration":"PT54S"},"screenshot":["https://slatemind-webpage.vercel.app/assets/lesson.webp","https://slatemind-webpage.vercel.app/assets/badges.webp"],"codeRepository":"https://github.com/saksham456456/Slate-Mind","author":{"@type":"Person","name":"Saksham Mogha","url":"https://github.com/saksham456456"}}</script>
 <style>
 :root{--bg:#f3f5f1;--ink:#17211e;--muted:#46564f;--line:#cdd6cf;--paper:#fff;--board:#1b2724;--chalk:#f1efe6;--yellow:#f2d98b;--blue:#8fc4d9;--rose:#eea6a0;--frame:#6b4a2f;--hand:"Segoe Print","Bradley Hand","Chalkboard SE","Marker Felt","Comic Sans MS",cursive;--sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color-scheme:light}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111815;--ink:#e8ede9;--muted:#a9b8b0;--line:#2c3a34;--paper:#18211e;color-scheme:dark}}
@@ -40,8 +42,6 @@ nav a:hover{text-decoration:underline}
 h1{font:700 clamp(36px,5.6vw,60px)/1.08 var(--hand);margin:0 0 20px}
 .lead{font-size:19px;max-width:30em;color:#dcd9cc;margin:0 0 28px}
 .btn{display:inline-block;padding:13px 22px;border-radius:8px;font-weight:700;text-decoration:none;border:2px solid transparent;font-size:16px}
-.btn.primary{background:var(--yellow);color:#17211e}
-.btn.primary:hover{background:#f7e4a9}
 .btn.ghost{border-color:#8a978f;color:var(--chalk);margin-left:10px}
 .btn.ghost:hover{border-color:var(--chalk)}
 .btn.dark{background:var(--ink);color:var(--bg)}
@@ -103,16 +103,11 @@ nav a{display:inline-block;padding:10px 4px}
 .menu div{position:absolute;right:0;top:50px;z-index:10;min-width:200px;background:#243430;border:1px solid #5d6e66;border-radius:10px;padding:6px;box-shadow:0 10px 24px rgba(0,0,0,.4)}
 .menu a{display:flex;align-items:center;min-height:44px;padding:0 12px;color:var(--chalk);text-decoration:none;border-radius:6px}
 .menu a:hover{background:#2f443e}
-.hdr-r{display:flex;align-items:center;gap:10px}
 @media (max-width:820px){.menu{display:block}.feat li,.road th,.road td{padding-block:14px}footer a{display:inline-block;padding:8px 0}}
-
 .stage{background:#14201d;color:var(--chalk);padding:64px 0 76px;border-top:1px solid #2c3a34}
 .stage h2{color:var(--chalk)}.stage .sub{color:#b9c4bd}
-.vid{max-width:980px;margin:0 auto;border-radius:14px;overflow:hidden;border:1px solid #3a4b44;box-shadow:0 24px 60px rgba(0,0,0,.45);background:#000}
-.vid video{display:block;width:100%;height:auto;aspect-ratio:1280/592;background:#0f0b08}
 .stage details{max-width:980px;margin:18px auto 0;color:#c8d1cb;font-size:15.5px}
 .stage summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font-weight:600;color:var(--chalk)}
-.vnote{max-width:980px;margin:14px auto 0;font-size:14px;color:#a9b8b0}
 .shots{display:grid;gap:26px}.shots .row{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .shots figure{margin:0}
 .win{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#0f0b08;box-shadow:0 12px 30px rgba(0,0,0,.16)}
@@ -130,7 +125,59 @@ dialog.lb::backdrop{background:rgba(0,0,0,.82)}
 dialog.lb img{display:block;max-width:96vw;max-height:84vh;width:auto;height:auto;border-radius:10px;margin:0 auto}
 dialog.lb .x{display:block;margin:0 auto 10px;min-height:44px;min-width:88px;border-radius:8px;border:2px solid var(--chalk);background:#1b2724;color:var(--chalk);font:600 16px var(--sans);cursor:pointer}
 @media (max-width:820px){.shots .row{grid-template-columns:1fr}.stage{padding:48px 0 56px}}
-@media (prefers-reduced-motion:reduce){.vid video{scroll-behavior:auto}}
+.launch{white-space:nowrap;background:var(--yellow);color:#17211e!important;opacity:1!important;font-weight:800;padding:9px 18px!important;border-radius:999px;border:2px solid #17211e;box-shadow:3px 3px 0 #a98b34;display:inline-flex!important;align-items:center;gap:6px;margin-left:22px;text-decoration:none!important}
+.launch:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 #a98b34}
+.launch svg{width:18px;height:18px}
+.menu .mlaunch{background:var(--yellow);color:#17211e;font-weight:800;margin-bottom:4px}
+.launch-xl{display:inline-flex;align-items:center;gap:18px;background:var(--yellow);color:#17211e;text-decoration:none;padding:15px 18px 15px 26px;border-radius:14px;border:2px solid #17211e;box-shadow:6px 6px 0 #a98b34;transition:transform .12s,box-shadow .12s;min-height:64px}
+.launch-xl:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 #a98b34}
+.launch-xl:active{transform:translate(3px,3px);box-shadow:2px 2px 0 #a98b34}
+.launch-xl:focus-visible{outline:3px solid #fff;outline-offset:4px}
+.launch-xl .lt{display:flex;flex-direction:column;text-align:left}
+.launch-xl .l1{font:800 22px/1.15 var(--sans)}
+.launch-xl .l2{font:600 13.5px/1.3 var(--sans);color:#3b3519}
+.launch-xl .lc{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:#17211e;color:var(--yellow);flex:none}
+.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:18px 20px;margin-top:46px}
+.cta-row .btn.ghost{margin:0}
+.cta-wrap{position:relative;display:inline-block}
+.hand{position:absolute;right:6px;top:-70px;color:var(--yellow);font:700 21px var(--hand);display:flex;flex-direction:column;align-items:flex-end;pointer-events:none;transform:rotate(-4deg)}
+.hand svg{margin-right:-4px;margin-top:-4px}
+.endcta{background:var(--board);color:var(--chalk);text-align:center;padding:68px 0 76px}
+.endcta h2{color:var(--chalk)}.endcta p{color:#c8d1cb;margin:0 0 28px}
+.fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:30;display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 20px;border-radius:999px;background:var(--yellow);color:#17211e;font:800 16px var(--sans);text-decoration:none;border:2px solid #17211e;box-shadow:4px 4px 0 #a98b34;visibility:hidden;opacity:0;transform:translateY(14px);transition:opacity .2s,transform .2s,visibility 0s .2s}
+.fab.show{visibility:visible;opacity:1;transform:none;transition:opacity .2s,transform .2s}
+.fab svg{width:18px;height:18px}
+.pcard{all:unset;box-sizing:border-box;position:relative;display:block;max-width:980px;margin:0 auto;border-radius:14px;overflow:hidden;border:1px solid #3a4b44;box-shadow:0 24px 60px rgba(0,0,0,.45);cursor:pointer;background:#000}
+.pcard img{display:block;width:100%;height:auto}
+.pcard:focus-visible{outline:3px solid #fff;outline-offset:4px}
+.pshade{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,15,13,.85),rgba(10,15,13,.1) 55%)}
+.pplay{position:absolute;left:50%;top:48%;width:88px;height:88px;margin:-44px 0 0 -44px;border-radius:50%;background:var(--yellow);color:#17211e;display:grid;place-items:center;border:3px solid #17211e;box-shadow:5px 5px 0 #a98b34;transition:transform .15s}
+.pcard:hover .pplay{transform:scale(1.07)}
+.pplay svg{margin-left:4px}
+.plabel{position:absolute;left:22px;bottom:18px;display:flex;flex-direction:column;color:var(--chalk);text-align:left}
+.plabel b{font:700 22px var(--hand)}.plabel span{font-size:14px;color:#c8d1cb}
+dialog.vd{border:1px solid #3a4b44;border-radius:14px;padding:0;background:#0f1613;color:var(--chalk);width:min(1100px,96vw);max-width:96vw;max-height:96vh;overflow:auto}
+dialog.vd::backdrop{background:rgba(8,12,10,.88)}
+.vd-in{background:#0f1613}.vd-in:fullscreen{overflow:auto;display:flex;flex-direction:column;justify-content:center}
+.vd-head{display:flex;justify-content:space-between;align-items:center;padding:8px 8px 8px 16px;font:600 15px var(--sans)}
+.vd-x,.vd-bar button,.vd-ch button{min-height:44px;border:1.5px solid #5d6e66;border-radius:10px;background:none;color:var(--chalk);font:600 15px var(--sans);cursor:pointer;padding:0 14px}
+.vd-x:hover,.vd-bar button:hover,.vd-ch button:hover{border-color:var(--chalk)}
+.vd-stage{position:relative;background:#000}
+.vd-stage video{display:block;width:100%;height:auto;aspect-ratio:1280/592;cursor:pointer}
+.vd-big{position:absolute;left:50%;top:50%;width:84px;height:84px;margin:-42px 0 0 -42px;border-radius:50%;background:var(--yellow);border:3px solid #17211e;color:#17211e;cursor:pointer;display:grid;place-items:center;padding:0}
+.vd-end{position:absolute;inset:0;background:rgba(12,18,15,.92);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;text-align:center}
+.vd-end[hidden],.vd-big[hidden]{display:none}
+.vd-end p{margin:0;font:700 30px var(--hand)}
+.vd-bar{display:flex;align-items:center;gap:10px;padding:10px 14px}
+.vd-bar button{width:48px;padding:0;display:grid;place-items:center}
+.vd-bar span{font:14px var(--sans);font-variant-numeric:tabular-nums;color:#c8d1cb;min-width:36px}
+.vd-bar input{flex:1;min-height:44px;accent-color:#f2d98b}
+.vd-ch{list-style:none;margin:0;padding:0 14px 8px;display:flex;gap:8px;overflow-x:auto}
+.vd-ch button{white-space:nowrap}.vd-ch button.on{background:var(--chalk);color:#17211e;border-color:var(--chalk)}
+.vd-k{margin:0;padding:0 16px 14px;font-size:13px;color:#a9b8b0}
+@media (max-width:820px){.launch{margin-left:0;padding:8px 14px!important;font-size:15px}.hand{display:none}.cta-row{margin-top:30px}.launch-xl{width:100%;justify-content:space-between}.fab{left:14px;right:14px;justify-content:center;min-height:54px}.vd-k{display:none}.vd-bar{gap:6px;padding:8px}.pplay{width:72px;height:72px;margin:-36px 0 0 -36px}}
+@media (max-width:1000px){.hand{display:none}.cta-row{margin-top:30px}}
+@media (prefers-reduced-motion:reduce){.fab,.launch-xl,.pplay{transition:none}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cur{animation:none}}
 </style>
 </head>
@@ -140,14 +187,14 @@ dialog.lb .x{display:block;margin:0 auto 10px;min-height:44px;min-width:88px;bor
  <div class="wrap">
   <header class="top">
    <a class="logo" href="#top">SlateMind</a>
-   <nav aria-label="Main"><a href="#demo">Demo</a><a href="#how">How it works</a><a href="#inside">What’s inside</a><a href="#next">Roadmap</a><a href="#plans">Plans</a><a class="keep" href="{{APP_URL}}" rel="noopener">Open the app</a></nav>
-   <details class="menu"><summary aria-label="Open menu">Menu</summary><div><a href="#demo">Demo</a><a href="#how">How it works</a><a href="#inside">What’s inside</a><a href="#next">Roadmap</a><a href="#plans">Plans</a><a href="#privacy">Privacy</a></div></details>
+   <nav aria-label="Main"><a href="#demo">Demo</a><a href="#how">How it works</a><a href="#inside">What’s inside</a><a href="#next">Roadmap</a><a href="#plans">Plans</a><a class="keep launch" href="https://slate-mind.vercel.app">Launch app <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></nav>
+   <details class="menu"><summary aria-label="Open menu">Menu</summary><div><a class="mlaunch" href="https://slate-mind.vercel.app">Launch app ↗</a><a href="#demo">Demo</a><a href="#how">How it works</a><a href="#inside">What’s inside</a><a href="#next">Roadmap</a><a href="#plans">Plans</a><a href="#privacy">Privacy</a></div></details>
   </header>
   <div class="hero-grid" id="top">
    <div>
     <h1>Watch it get taught, not just answered.</h1>
     <p class="lead">Type any topic and SlateMind writes the lesson on a blackboard in front of you, line by line. Then it quizzes you and gives you XP for getting it right.</p>
-    <a class="btn primary" href="{{APP_URL}}" rel="noopener">Try a lesson free</a><a class="btn ghost" href="#demo">Watch the demo</a>
+    <div class="cta-row"><div class="cta-wrap"><a class="launch-xl" href="https://slate-mind.vercel.app"><span class="lt"><span class="l1">Launch SlateMind</span><span class="l2">Free · no account · opens in this tab</span></span><span class="lc"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><span class="hand" aria-hidden="true"><span>start here</span><svg viewBox="0 0 70 56" width="70" height="56"><path d="M10 4C30 8 44 22 38 46" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M26 38 38 48 46 34" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div><a class="btn ghost" href="#demo">Watch the demo</a></div>
     <p class="fine">No sign-up needed. Your progress stays in your browser.</p>
    </div>
    <div class="frame" role="group" aria-label="Sample lesson demo">
@@ -156,7 +203,7 @@ dialog.lb .x{display:block;margin:0 auto 10px;min-height:44px;min-width:88px;bor
      <button class="chip" data-i="1" aria-pressed="false">Photosynthesis</button>
      <button class="chip" data-i="2" aria-pressed="false">Pythagoras</button>
     </div>
-    <div class="board" id="board" aria-hidden="true"></div>
+    <div class="board" id="board" aria-hidden="true"></div><noscript><p class="fine" style="padding:0 22px">Turn on JavaScript to see the animated sample lesson.</p></noscript>
     <div class="sr" id="transcript"></div>
     <div class="demo-foot"><span>Sample lessons, scripted for this page.</span><button class="replay" id="replay">Replay</button></div>
    </div>
@@ -168,41 +215,58 @@ dialog.lb .x{display:block;margin:0 auto 10px;min-height:44px;min-width:88px;bor
 <section id="demo" class="stage"><div class="wrap">
  <h2>See it in action</h2>
  <p class="sub">A real screen recording of the app: enter a name, pick a topic, watch the lesson get written, then take the quiz.</p>
- <div class="vid"><video controls playsinline preload="none" poster="/assets/demo-poster.webp" width="1280" height="592" aria-describedby="vt"><source src="/assets/demo.mp4" type="video/mp4">Your browser can’t play this video. <a href="/assets/demo.mp4">Download it (MP4, about 1 MB)</a>.</video></div>
- <p class="vnote">56 seconds · sound effects only, no narration · loads only when you press play</p>
- <details><summary>Text description of the video</summary><p id="vt">A screen recording of SlateMind. The student types a name and presses “Begin Your Journey”, then enters the topic “How the Internet Works”. The app writes the lesson on the green blackboard line by line: IP addresses locate devices, DNS translates domain names, TCP/IP manages data transmission, a formula for data rate, and a Packet Switching heading. A Pop Quiz panel then asks three questions, ending with “What is an IP address?”. The clip finishes on the Badges screen, which shows the collection of badges to unlock.</p></details>
+ <button type="button" class="pcard" id="openvid" aria-haspopup="dialog"><img src="/assets/demo-poster.webp" width="1280" height="592" loading="lazy" alt="Preview of the SlateMind demo: a lesson on how the internet works on the blackboard with a quiz panel"><span class="pshade"></span><span class="pplay" aria-hidden="true"><svg viewBox="0 0 24 24" width="34" height="34"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span><span class="plabel"><b>Watch the demo</b><span>0:54 · sound effects, no narration</span></span></button>
+ <noscript><p><a href="/assets/demo.mp4">Download the demo video (MP4, about 1 MB)</a></p></noscript>
+ <details><summary>Text description of the video</summary><p>A screen recording of SlateMind. The student types a name and presses “Begin Your Journey”, then enters the topic “How the Internet Works”. The app writes the lesson on the green blackboard line by line: IP addresses locate devices, DNS translates domain names, TCP/IP manages data transmission, a formula for data rate, and a Packet Switching heading. A Pop Quiz panel then asks three questions and shows a star score with bonus XP. The clip finishes on the Badges screen, which shows the collection of badges to unlock.</p></details>
 </div></section>
+
+<dialog class="vd" id="vd" aria-label="SlateMind demo video"><div class="vd-in" id="vin">
+ <div class="vd-head"><span>SlateMind demo · 0:54</span><button class="vd-x" id="vdx" type="button">Close ✕</button></div>
+ <div class="vd-stage"><video id="v" playsinline preload="metadata" poster="/assets/demo-poster.webp"><source src="/assets/demo.mp4" type="video/mp4"></video>
+  <button class="vd-big" id="vbig" type="button" aria-label="Play video"></button>
+  <div class="vd-end" id="vend" hidden><p>That’s SlateMind.</p><a class="launch-xl" href="https://slate-mind.vercel.app"><span class="lt"><span class="l1">Launch SlateMind</span><span class="l2">Free · no account · opens in this tab</span></span><span class="lc"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><button class="btn ghost" id="vrep" type="button">Replay</button></div></div>
+ <div class="vd-bar"><button id="vpp" type="button" aria-label="Play"></button><span id="vt1">0:00</span><input id="vseek" type="range" min="0" max="1000" value="0" aria-label="Seek"><span id="vt2">0:54</span><button id="vmute" type="button" aria-label="Mute"></button><button id="vfs" type="button" aria-label="Full screen"></button></div>
+ <ul class="vd-ch" aria-label="Jump to a part of the video"><li><button type="button" data-t="0">Start</button></li><li><button type="button" data-t="16">Lesson</button></li><li><button type="button" data-t="29">Quiz</button></li><li><button type="button" data-t="43">Score</button></li><li><button type="button" data-t="49">Badges</button></li></ul>
+ <p class="vd-k">Keyboard: Space play/pause · ←/→ skip 5 s · M mute · F full screen · Esc close</p>
+</div></dialog>
 
 <section id="how"><div class="wrap">
  <h2>Three steps, about a minute</h2>
  <p class="sub">Most AI tools hand you a wall of text. SlateMind slows down and teaches the way a good teacher does at the board.</p>
  <div class="steps">
   <div class="step"><h3>Type a topic</h3><p>Anything from “how vaccines work” to “binary search”. Or take the daily challenge.</p></div>
-  <div class="step"><h3>Watch it written</h3><p>A short lesson appears in chalk handwriting with a diagram, a key formula and a mid-lesson pause to think.</p></div>
-  <div class="step"><h3>Check yourself</h3><p>Answer a 3-question quiz, ask a follow-up, and earn XP, badges and streak days.</p></div>
+  <div class="step"><h3>Watch it written</h3><p>A short lesson appears in chalk handwriting, with bullet points, a key formula and highlighted ideas.</p></div>
+  <div class="step"><h3>Check yourself</h3><p>Take a 3-question quiz, see your score, and earn XP, badges and streak days.</p></div>
  </div>
 </div></section>
 
 <section id="screens" class="alt"><div class="wrap">
  <h2>Inside the app</h2>
  <p class="sub">Real screenshots from the current version. Select any image to enlarge it.</p>
- <div class="shots"><figure class="big"><div class="win"><div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>SlateMind</span></div><button type="button" data-full="/assets/lesson.webp" data-alt="SlateMind lesson on how the internet works: handwritten notes on a green blackboard, with Fun Fact, Key Terms and Pop Quiz tabs on the right showing question 3 of 3, “What is an IP address?”" aria-label="Enlarge screenshot: The lesson and the quiz"><img src="/assets/lesson.webp" width="1280" height="592" loading="lazy" alt="SlateMind lesson on how the internet works: handwritten notes on a green blackboard, with Fun Fact, Key Terms and Pop Quiz tabs on the right showing question 3 of 3, “What is an IP address?”"></button></div><figcaption><b>The lesson and the quiz</b>Notes appear in chalk handwriting with formulas and headings. Fun Fact, Key Terms and a Pop Quiz sit alongside, with a follow-up question box underneath.</figcaption></figure><div class="row"><figure><div class="win"><div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>SlateMind</span></div><button type="button" data-full="/assets/onboarding.webp" data-alt="SlateMind welcome screen asking for a student name, with a Begin Your Journey button and feature tags for lessons, XP and levels, quizzes, badges and streaks" aria-label="Enlarge screenshot: Start in seconds"><img src="/assets/onboarding.webp" width="1280" height="592" loading="lazy" alt="SlateMind welcome screen asking for a student name, with a Begin Your Journey button and feature tags for lessons, XP and levels, quizzes, badges and streaks"></button></div><figcaption><b>Start in seconds</b>Enter a name and begin. There is no account or password.</figcaption></figure><figure><div class="win"><div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>SlateMind</span></div><button type="button" data-full="/assets/badges.webp" data-alt="Your Badges screen in SlateMind showing a grid of 16 badges such as First Step, Bookworm, Quiz Master and Night Owl" aria-label="Enlarge screenshot: 16 badges to unlock"><img src="/assets/badges.webp" width="1280" height="592" loading="lazy" alt="Your Badges screen in SlateMind showing a grid of 16 badges such as First Step, Bookworm, Quiz Master and Night Owl"></button></div><figcaption><b>16 badges to unlock</b>Earn them for lessons, quizzes, streaks and daily challenges.</figcaption></figure><figure><div class="win"><div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>SlateMind</span></div><button type="button" data-full="/assets/settings.webp" data-alt="SlateMind settings with writing speed, sound effects, chalk colour theme (Classic, Neon, Sunset), change name and reset progress" aria-label="Enlarge screenshot: Make it yours"><img src="/assets/settings.webp" width="1280" height="592" loading="lazy" alt="SlateMind settings with writing speed, sound effects, chalk colour theme (Classic, Neon, Sunset), change name and reset progress"></button></div><figcaption><b>Make it yours</b>Choose the writing speed, sound, and a chalk theme.</figcaption></figure></div></div>
+ <div class="shots">
+  <figure class="big"><div class="win"><div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>SlateMind</span></div><button type="button" data-full="/assets/lesson.webp" aria-label="Enlarge screenshot: The lesson and the quiz"><img src="/assets/lesson.webp" width="1280" height="592" loading="lazy" alt="SlateMind lesson on how the internet works: handwritten notes on a green blackboard, with Fun Fact, Key Terms and Pop Quiz tabs on the right showing question 3 of 3, “What is an IP address?”"></button></div><figcaption><b>The lesson and the quiz</b>Notes appear in chalk handwriting with formulas and headings. Fun Fact, Key Terms and a Pop Quiz sit alongside, with a follow-up question box underneath.</figcaption></figure>
+  <div class="row">
+   <figure><div class="win"><div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>SlateMind</span></div><button type="button" data-full="/assets/onboarding.webp" aria-label="Enlarge screenshot: Start in seconds"><img src="/assets/onboarding.webp" width="1280" height="592" loading="lazy" alt="SlateMind welcome screen asking for a student name, with a Begin Your Journey button and feature tags for lessons, XP and levels, quizzes, badges and streaks"></button></div><figcaption><b>Start in seconds</b>Enter a name and begin. There is no account or password.</figcaption></figure>
+   <figure><div class="win"><div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>SlateMind</span></div><button type="button" data-full="/assets/badges.webp" aria-label="Enlarge screenshot: 16 badges to unlock"><img src="/assets/badges.webp" width="1280" height="592" loading="lazy" alt="Your Badges screen in SlateMind showing a grid of 16 badges such as First Step, Bookworm, Quiz Master and Night Owl"></button></div><figcaption><b>16 badges to unlock</b>Earn them for lessons, quizzes, streaks and daily challenges.</figcaption></figure>
+   <figure><div class="win"><div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>SlateMind</span></div><button type="button" data-full="/assets/settings.webp" aria-label="Enlarge screenshot: Make it yours"><img src="/assets/settings.webp" width="1280" height="592" loading="lazy" alt="SlateMind settings with writing speed, sound effects, chalk colour theme (Classic, Neon, Sunset), change name and reset progress"></button></div><figcaption><b>Make it yours</b>Choose the writing speed, sound, and a chalk theme.</figcaption></figure>
+  </div>
+ </div>
 </div></section>
 
 <dialog class="lb" id="lb" aria-label="Enlarged screenshot"><button class="x" type="button" id="lbx">Close</button><img id="lbi" alt=""></dialog>
 
 <section id="inside"><div class="wrap">
  <h2>What’s in the app today</h2>
- <p class="sub">Everything below works right now. Nothing here is a mock-up.</p>
+ <p class="sub">What the app does today, taken from the current version.</p>
  <div class="cols">
   <ul class="feat">
-   <li><b>Animated blackboard</b><span>Headings, bullets, formulas, circled key ideas and simple diagrams drawn as handwriting.</span></li>
+   <li><b>Animated blackboard</b><span>Headings, bullets, formulas and highlighted key ideas drawn as handwriting.</span></li>
    <li><b>Auto-made quiz</b><span>Three questions after every lesson, each with a one-line explanation.</span></li>
-   <li><b>Ask a follow-up</b><span>Not clear? Ask on the board and get a short answer written below the lesson.</span></li>
+   <li><b>Ask a follow-up (beta)</b><span>Not clear? Ask a question about the topic. This part is still being improved.</span></li>
    <li><b>Glossary and fun fact</b><span>Key terms and one surprising fact for every topic.</span></li>
   </ul>
   <ul class="feat">
-   <li><b>XP, levels, 16 badges</b><span>Ten levels and daily streaks that reward showing up.</span></li>
+   <li><b>XP, levels, 16 badges</b><span>Levels and daily streaks that reward showing up.</span></li>
    <li><b>Daily challenge</b><span>A new topic each day with bonus XP.</span></li>
    <li><b>Save as an image</b><span>Export any lesson board as a PNG for your notes.</span></li>
    <li><b>Your pace, your look</b><span>Speed control, sound on or off, and three chalk colour themes.</span></li>
@@ -236,7 +300,7 @@ dialog.lb .x{display:block;margin:0 auto 10px;min-height:44px;min-width:88px;bor
  <div>
   <h2>Your data, plainly</h2>
   <p>This page sets no cookies, runs no analytics and loads no third-party fonts or scripts.</p>
-  <p>In the app, the topic you type is sent to our server and to Groq, the AI provider that writes the lesson. We don’t ask for your name, email or any account to use it. Your XP, streaks and history are stored only in your own browser, and “Reset all” in settings clears them.</p>
+  <p>In the app, the topic you type is sent to our server and to Groq, the AI provider that writes the lesson. You don’t need an account or an email address. The app asks for a first name or nickname to greet you, and keeps it, your XP, streaks and history only in your own browser. “Reset” in the app’s settings clears them.</p>
   <p>SlateMind is meant for learners of all ages. Before accounts or payments exist, we will add a parental consent step for anyone under 18, as India’s data protection rules require. Read the full <a href="/privacy">Privacy Policy</a>.</p>
  </div>
  <div>
@@ -246,11 +310,13 @@ dialog.lb .x{display:block;margin:0 auto 10px;min-height:44px;min-width:88px;bor
   <p>AI can make mistakes. Check important facts with your textbook or teacher.</p>
  </div>
 </div></section>
+<section class="endcta"><div class="wrap"><h2>Ready for your first lesson?</h2><p>Pick any topic. It takes about a minute, and there is nothing to install.</p><a class="launch-xl" href="https://slate-mind.vercel.app"><span class="lt"><span class="l1">Launch SlateMind</span><span class="l2">Free · no account · opens in this tab</span></span><span class="lc"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div></section>
 </main>
 
+<a class="fab" id="fab" href="https://slate-mind.vercel.app">Launch SlateMind <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
 <footer><div class="wrap">
- <div><strong style="font-family:var(--hand);font-size:20px;color:var(--chalk)">SlateMind</strong><p>An AI blackboard teacher. Made in Faridabad, India.</p><p>Contact: <a href="https://saksham-mogha.vercel.app/contact">Contact Us</a></p></div>
- <ul><li><a href="/privacy">Privacy Policy</a></li><li><a href="/terms">Terms of Use</a></li><li><a href="/cookies">Cookies &amp; storage</a></li><li><a href="https://github.com/saksham456456/Slate-Mind" rel="noopener">Source code</a></li><li><a href="{{APP_URL}}" rel="noopener">Open the app</a></li></ul>
+ <div><strong style="font-family:var(--hand);font-size:20px;color:var(--chalk)">SlateMind</strong><p>An AI blackboard teacher. Made in Faridabad, India.</p><p><a href="https://saksham-mogha.vercel.app/contact">Contact us</a></p></div>
+ <ul><li><a href="/privacy">Privacy Policy</a></li><li><a href="/terms">Terms of Use</a></li><li><a href="/cookies">Cookies &amp; storage</a></li><li><a href="https://github.com/saksham456456/Slate-Mind" rel="noopener">Source code</a></li><li><a href="https://slate-mind.vercel.app">Launch the app</a></li></ul>
 </div></footer>
 
 <script>
@@ -267,7 +333,7 @@ async function play(i){
  tr.textContent=L[i].map(function(b){return b[1]}).join(". ");
  for(var k=0;k<L[i].length;k++){
   if(id!==run)return;
-  var b=L[i][k],el=document.createElement(b[0]==="h"||b[0]==="em"?"span":"span");
+  var b=L[i][k],el=document.createElement("span");
   el.className=b[0];
   if(b[0]==="h"){var w=document.createElement("div");w.appendChild(el);board.appendChild(w)}else board.appendChild(el);
   if(rm){el.textContent=b[1];continue}
@@ -279,10 +345,48 @@ async function play(i){
 chips.forEach(function(ch){ch.addEventListener("click",function(){chips.forEach(function(x){x.setAttribute("aria-pressed","false")});ch.setAttribute("aria-pressed","true");play(+ch.dataset.i)})});
 document.getElementById("replay").addEventListener("click",function(){play(cur)});
 var lb=document.getElementById("lb"),lbi=document.getElementById("lbi");
-document.querySelectorAll(".win button").forEach(function(b){b.addEventListener("click",function(){lbi.src=b.dataset.full;lbi.alt=b.dataset.alt;lb.showModal()})});
+document.querySelectorAll(".win button").forEach(function(b){b.addEventListener("click",function(){var im=b.querySelector("img");lbi.src=b.dataset.full;lbi.alt=im.alt;lb.showModal()})});
 document.getElementById("lbx").addEventListener("click",function(){lb.close()});
 lb.addEventListener("click",function(e){if(e.target===lb)lb.close()});
 play(0);
+})();
+(function(){
+var I={play:'<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>',pause:'<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/></svg>',vol:'<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9zM16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>',mute:'<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9z" fill="currentColor"/><path d="m16 9 5 6m0-6-5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>',fs:'<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'};
+var d=document.getElementById("vd"),v=document.getElementById("v"),o=document.getElementById("openvid");
+if(!d||!d.showModal||!v||!o)return;
+var $=function(i){return document.getElementById(i)},pp=$("vpp"),big=$("vbig"),end=$("vend"),sk=$("vseek"),t1=$("vt1"),t2=$("vt2"),mu=$("vmute"),fs=$("vfs"),wrap=$("vin"),chs=d.querySelectorAll(".vd-ch button");
+function fmt(s){s=Math.max(0,Math.floor(s||0));return Math.floor(s/60)+":"+("0"+s%60).slice(-2)}
+function dur(){return isFinite(v.duration)&&v.duration>0?v.duration:54}
+function ui(){var p=!v.paused&&!v.ended;pp.innerHTML=p?I.pause:I.play;pp.setAttribute("aria-label",p?"Pause":"Play");big.innerHTML=I.play;big.hidden=p||v.ended;end.hidden=!v.ended;mu.innerHTML=v.muted?I.mute:I.vol;mu.setAttribute("aria-label",v.muted?"Unmute":"Mute")}
+function tick(){var c=v.currentTime;sk.value=Math.round(c/dur()*1000);t1.textContent=fmt(c);t2.textContent=fmt(dur());sk.setAttribute("aria-valuetext",fmt(c)+" of "+fmt(dur()));var a=0;chs.forEach(function(b,n){if(c>=+b.dataset.t)a=n});chs.forEach(function(b,n){b.classList.toggle("on",n===a)})}
+function toggle(){if(v.paused||v.ended){if(v.ended)v.currentTime=0;var r=v.play();if(r&&r.catch)r.catch(function(){})}else v.pause()}
+function seekBy(s){v.currentTime=Math.min(dur(),Math.max(0,v.currentTime+s))}
+o.addEventListener("click",function(){d.showModal();if(v.ended)v.currentTime=0;var r=v.play();if(r&&r.catch)r.catch(ui);ui();tick()});
+$("vdx").addEventListener("click",function(){d.close()});
+d.addEventListener("click",function(e){if(e.target===d)d.close()});
+d.addEventListener("close",function(){v.pause();if(document.fullscreenElement&&document.exitFullscreen)document.exitFullscreen()});
+["play","pause","ended","volumechange","loadedmetadata"].forEach(function(n){v.addEventListener(n,function(){ui();tick()})});
+v.addEventListener("timeupdate",tick);v.addEventListener("click",toggle);pp.addEventListener("click",toggle);big.addEventListener("click",toggle);
+$("vrep").addEventListener("click",toggle);
+sk.addEventListener("input",function(){v.currentTime=sk.value/1000*dur();tick()});
+mu.addEventListener("click",function(){v.muted=!v.muted});
+if(wrap.requestFullscreen){fs.innerHTML=I.fs;fs.addEventListener("click",function(){if(document.fullscreenElement)document.exitFullscreen();else wrap.requestFullscreen().catch(function(){})})}else fs.hidden=true;
+chs.forEach(function(b){b.addEventListener("click",function(){v.currentTime=+b.dataset.t;var r=v.play();if(r&&r.catch)r.catch(function(){})})});
+d.addEventListener("keydown",function(e){var inCtl=e.target.closest&&e.target.closest("button,input,a");
+ if(e.key===" "&&!inCtl){e.preventDefault();toggle()}
+ else if(e.key==="ArrowRight"&&e.target!==sk){e.preventDefault();seekBy(5)}
+ else if(e.key==="ArrowLeft"&&e.target!==sk){e.preventDefault();seekBy(-5)}
+ else if(e.key==="m"||e.key==="M"){v.muted=!v.muted}
+ else if(e.key==="f"||e.key==="F"){if(!fs.hidden)fs.click()}});
+ui();tick();
+})();
+(function(){
+var f=document.getElementById("fab"),hero=document.querySelector(".hero"),end=document.querySelector(".endcta"),ft=document.querySelector("footer");
+if(!f||!window.IntersectionObserver)return;
+var s={h:true,e:false,f:false};
+function up(){f.classList.toggle("show",!s.h&&!s.e&&!s.f)}
+function ob(el,k){if(!el)return;new IntersectionObserver(function(x){s[k]=x[0].isIntersecting;up()}).observe(el)}
+ob(hero,"h");ob(end,"e");ob(ft,"f");
 })();
 </script>
 </body>
