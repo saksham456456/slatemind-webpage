@@ -14,13 +14,16 @@
 <meta property="og:title" content="SlateMind – Watch any topic get taught on a blackboard">
 <meta property="og:description" content="An AI teacher that writes each lesson on a blackboard, then quizzes you. Free to try, no sign-up.">
 <meta property="og:url" content="https://slatemind-webpage.vercel.app/">
-<meta property="og:image" content="https://slatemind-webpage.vercel.app/og.png">
-<meta property="og:image:alt" content="SlateMind: an AI teacher that writes lessons on a blackboard">
+<meta property="og:image" content="https://slatemind-webpage.vercel.app/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SlateMind: Watch it get taught. A lesson written in chalk handwriting on a blackboard.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://slatemind-webpage.vercel.app/og.png">
+<meta name="twitter:image" content="https://slatemind-webpage.vercel.app/og.jpg">
 <meta name="twitter:title" content="SlateMind – Watch any topic get taught on a blackboard">
 <meta name="twitter:description" content="An AI teacher that writes each lesson on a blackboard, then quizzes you. Free to try, no sign-up.">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SlateMind","url":"https://slatemind-webpage.vercel.app/","description":"An AI teacher that writes each lesson on a blackboard, then quizzes the learner with XP, streaks and badges.","applicationCategory":"EducationalApplication","operatingSystem":"Any (web browser)","inLanguage":"en","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"license":"https://www.apache.org/licenses/LICENSE-2.0","video":{"@type":"VideoObject","name":"SlateMind product demo","description":"A 54-second screen recording of SlateMind writing a lesson on a blackboard, then running a quiz.","thumbnailUrl":"https://slatemind-webpage.vercel.app/assets/demo-poster.webp","contentUrl":"https://slatemind-webpage.vercel.app/assets/demo.mp4","uploadDate":"2026-08-12","duration":"PT54S"},"screenshot":["https://slatemind-webpage.vercel.app/assets/lesson.webp","https://slatemind-webpage.vercel.app/assets/badges.webp"],"codeRepository":"https://github.com/saksham456456/Slate-Mind","author":{"@type":"Person","name":"Saksham Mogha","url":"https://github.com/saksham456456"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SlateMind","url":"https://slatemind-webpage.vercel.app/","description":"An AI teacher that writes each lesson on a blackboard, then quizzes the learner with XP, streaks and badges.","applicationCategory":"EducationalApplication","operatingSystem":"Any (web browser)","inLanguage":"en","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"license":"https://www.apache.org/licenses/LICENSE-2.0","screenshot":["https://slatemind-webpage.vercel.app/assets/lesson.webp","https://slatemind-webpage.vercel.app/assets/badges.webp"],"codeRepository":"https://github.com/saksham456456/Slate-Mind","author":{"@type":"Person","name":"Saksham Mogha","url":"https://github.com/saksham456456"}}</script>
 <style>
 :root{--bg:#f3f5f1;--ink:#17211e;--muted:#46564f;--line:#cdd6cf;--paper:#fff;--board:#1b2724;--chalk:#f1efe6;--yellow:#f2d98b;--blue:#8fc4d9;--rose:#eea6a0;--frame:#6b4a2f;--hand:"Segoe Print","Bradley Hand","Chalkboard SE","Marker Felt","Comic Sans MS",cursive;--sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color-scheme:light}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111815;--ink:#e8ede9;--muted:#a9b8b0;--line:#2c3a34;--paper:#18211e;color-scheme:dark}}
@@ -150,7 +153,7 @@ dialog.lb .x{display:block;margin:0 auto 10px;min-height:44px;min-width:88px;bor
 .pcard{all:unset;box-sizing:border-box;position:relative;display:block;max-width:980px;margin:0 auto;border-radius:14px;overflow:hidden;border:1px solid #3a4b44;box-shadow:0 24px 60px rgba(0,0,0,.45);cursor:pointer;background:#000}
 .pcard img{display:block;width:100%;height:auto}
 .pcard:focus-visible{outline:3px solid #fff;outline-offset:4px}
-.pshade{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,15,13,.85),rgba(10,15,13,.1) 55%)}
+.pshade{display:none}
 .pplay{position:absolute;left:50%;top:48%;width:88px;height:88px;margin:-44px 0 0 -44px;border-radius:50%;background:var(--yellow);color:#17211e;display:grid;place-items:center;border:3px solid #17211e;box-shadow:5px 5px 0 #a98b34;transition:transform .15s}
 .pcard:hover .pplay{transform:scale(1.07)}
 .pplay svg{margin-left:4px}
@@ -175,7 +178,7 @@ dialog.vd::backdrop{background:rgba(8,12,10,.88)}
 .vd-ch{list-style:none;margin:0;padding:0 14px 8px;display:flex;gap:8px;overflow-x:auto}
 .vd-ch button{white-space:nowrap}.vd-ch button.on{background:var(--chalk);color:#17211e;border-color:var(--chalk)}
 .vd-k{margin:0;padding:0 16px 14px;font-size:13px;color:#a9b8b0}
-@media (max-width:820px){.launch{margin-left:0;padding:8px 14px!important;font-size:15px}.hand{display:none}.cta-row{margin-top:30px}.launch-xl{width:100%;justify-content:space-between}.fab{left:14px;right:14px;justify-content:center;min-height:54px}.vd-k{display:none}.vd-bar{gap:6px;padding:8px}.pplay{width:72px;height:72px;margin:-36px 0 0 -36px}}
+@media (max-width:820px){.launch{margin-left:0;padding:8px 14px!important;font-size:15px}.hand{display:none}.cta-row{margin-top:30px}.launch-xl{width:100%;justify-content:space-between}.fab{display:none}.vd-k{display:none}.vd-bar{gap:6px;padding:8px}.pplay{width:72px;height:72px;margin:-36px 0 0 -36px}}
 @media (max-width:1000px){.hand{display:none}.cta-row{margin-top:30px}}
 @media (prefers-reduced-motion:reduce){.fab,.launch-xl,.pplay{transition:none}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cur{animation:none}}
@@ -187,15 +190,15 @@ dialog.vd::backdrop{background:rgba(8,12,10,.88)}
  <div class="wrap">
   <header class="top">
    <a class="logo" href="#top">SlateMind</a>
-   <nav aria-label="Main"><a href="#demo">Demo</a><a href="#how">How it works</a><a href="#inside">What’s inside</a><a href="#next">Roadmap</a><a href="#plans">Plans</a><a class="keep launch" href="https://slate-mind.vercel.app">Launch app <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></nav>
-   <details class="menu"><summary aria-label="Open menu">Menu</summary><div><a class="mlaunch" href="https://slate-mind.vercel.app">Launch app ↗</a><a href="#demo">Demo</a><a href="#how">How it works</a><a href="#inside">What’s inside</a><a href="#next">Roadmap</a><a href="#plans">Plans</a><a href="#privacy">Privacy</a></div></details>
+   <nav aria-label="Main"><a href="#demo">Demo</a><a href="#how">How it works</a><a href="#inside">What’s inside</a><a href="#next">Roadmap</a><a href="/pitch">Pitch</a><a href="#plans">Plans</a><a class="keep launch" href="https://slate-mind.vercel.app">Launch app <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></nav>
+   <details class="menu"><summary aria-label="Open menu">Menu</summary><div><a class="mlaunch" href="https://slate-mind.vercel.app">Launch app ↗</a><a href="#demo">Demo</a><a href="#how">How it works</a><a href="#inside">What’s inside</a><a href="#next">Roadmap</a><a href="/pitch">Pitch</a><a href="#plans">Plans</a><a href="#privacy">Privacy</a></div></details>
   </header>
   <div class="hero-grid" id="top">
    <div>
     <h1>Watch it get taught, not just answered.</h1>
     <p class="lead">Type any topic and SlateMind writes the lesson on a blackboard in front of you, line by line. Then it quizzes you and gives you XP for getting it right.</p>
-    <div class="cta-row"><div class="cta-wrap"><a class="launch-xl" href="https://slate-mind.vercel.app"><span class="lt"><span class="l1">Launch SlateMind</span><span class="l2">Free · no account · opens in this tab</span></span><span class="lc"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><span class="hand" aria-hidden="true"><span>start here</span><svg viewBox="0 0 70 56" width="70" height="56"><path d="M10 4C30 8 44 22 38 46" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M26 38 38 48 46 34" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div><a class="btn ghost" href="#demo">Watch the demo</a></div>
-    <p class="fine">No sign-up needed. Your progress stays in your browser.</p>
+    <div class="cta-row"><div class="cta-wrap"><a class="launch-xl" href="https://slate-mind.vercel.app"><span class="lt"><span class="l1">Launch SlateMind</span><span class="l2">Free · no account · best on a laptop</span></span><span class="lc"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><span class="hand" aria-hidden="true"><span>start here</span><svg viewBox="0 0 70 56" width="70" height="56"><path d="M10 4C30 8 44 22 38 46" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M26 38 38 48 46 34" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div><a class="btn ghost" href="#demo">Watch the demo</a></div>
+    <p class="fine">No sign-up needed. Your progress stays in your browser. Works best on a laptop or tablet.</p>
    </div>
    <div class="frame" role="group" aria-label="Sample lesson demo">
     <div class="chips" role="group" aria-label="Pick a sample lesson">
@@ -216,15 +219,15 @@ dialog.vd::backdrop{background:rgba(8,12,10,.88)}
  <h2>See it in action</h2>
  <p class="sub">A real screen recording of the app: enter a name, pick a topic, watch the lesson get written, then take the quiz.</p>
  <button type="button" class="pcard" id="openvid" aria-haspopup="dialog"><img src="/assets/demo-poster.webp" width="1280" height="592" loading="lazy" alt="Preview of the SlateMind demo: a lesson on how the internet works on the blackboard with a quiz panel"><span class="pshade"></span><span class="pplay" aria-hidden="true"><svg viewBox="0 0 24 24" width="34" height="34"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span><span class="plabel"><b>Watch the demo</b><span>0:54 · sound effects, no narration</span></span></button>
- <noscript><p><a href="/assets/demo.mp4">Download the demo video (MP4, about 1 MB)</a></p></noscript>
+ <noscript><p>Turn on JavaScript to watch the demo video.</p></noscript>
  <details><summary>Text description of the video</summary><p>A screen recording of SlateMind. The student types a name and presses “Begin Your Journey”, then enters the topic “How the Internet Works”. The app writes the lesson on the green blackboard line by line: IP addresses locate devices, DNS translates domain names, TCP/IP manages data transmission, a formula for data rate, and a Packet Switching heading. A Pop Quiz panel then asks three questions and shows a star score with bonus XP. The clip finishes on the Badges screen, which shows the collection of badges to unlock.</p></details>
 </div></section>
 
 <dialog class="vd" id="vd" aria-label="SlateMind demo video"><div class="vd-in" id="vin">
  <div class="vd-head"><span>SlateMind demo · 0:54</span><button class="vd-x" id="vdx" type="button">Close ✕</button></div>
- <div class="vd-stage"><video id="v" playsinline preload="metadata" poster="/assets/demo-poster.webp"><source src="/assets/demo.mp4" type="video/mp4"></video>
+ <div class="vd-stage"><video id="v" controlsList="nodownload noremoteplayback" disablePictureInPicture playsinline preload="metadata" poster="/assets/demo-poster.webp"><source src="/assets/demo.mp4" type="video/mp4"></video>
   <button class="vd-big" id="vbig" type="button" aria-label="Play video"></button>
-  <div class="vd-end" id="vend" hidden><p>That’s SlateMind.</p><a class="launch-xl" href="https://slate-mind.vercel.app"><span class="lt"><span class="l1">Launch SlateMind</span><span class="l2">Free · no account · opens in this tab</span></span><span class="lc"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><button class="btn ghost" id="vrep" type="button">Replay</button></div></div>
+  <div class="vd-end" id="vend" hidden><p>That’s SlateMind.</p><a class="launch-xl" href="https://slate-mind.vercel.app"><span class="lt"><span class="l1">Launch SlateMind</span><span class="l2">Free · no account · best on a laptop</span></span><span class="lc"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><button class="btn ghost" id="vrep" type="button">Replay</button></div></div>
  <div class="vd-bar"><button id="vpp" type="button" aria-label="Play"></button><span id="vt1">0:00</span><input id="vseek" type="range" min="0" max="1000" value="0" aria-label="Seek"><span id="vt2">0:54</span><button id="vmute" type="button" aria-label="Mute"></button><button id="vfs" type="button" aria-label="Full screen"></button></div>
  <ul class="vd-ch" aria-label="Jump to a part of the video"><li><button type="button" data-t="0">Start</button></li><li><button type="button" data-t="16">Lesson</button></li><li><button type="button" data-t="29">Quiz</button></li><li><button type="button" data-t="43">Score</button></li><li><button type="button" data-t="49">Badges</button></li></ul>
  <p class="vd-k">Keyboard: Space play/pause · ←/→ skip 5 s · M mute · F full screen · Esc close</p>
@@ -310,13 +313,13 @@ dialog.vd::backdrop{background:rgba(8,12,10,.88)}
   <p>AI can make mistakes. Check important facts with your textbook or teacher.</p>
  </div>
 </div></section>
-<section class="endcta"><div class="wrap"><h2>Ready for your first lesson?</h2><p>Pick any topic. It takes about a minute, and there is nothing to install.</p><a class="launch-xl" href="https://slate-mind.vercel.app"><span class="lt"><span class="l1">Launch SlateMind</span><span class="l2">Free · no account · opens in this tab</span></span><span class="lc"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div></section>
+<section class="endcta"><div class="wrap"><h2>Ready for your first lesson?</h2><p>Pick any topic. It takes about a minute, and there is nothing to install.</p><a class="launch-xl" href="https://slate-mind.vercel.app"><span class="lt"><span class="l1">Launch SlateMind</span><span class="l2">Free · no account · best on a laptop</span></span><span class="lc"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div></section>
 </main>
 
 <a class="fab" id="fab" href="https://slate-mind.vercel.app">Launch SlateMind <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
 <footer><div class="wrap">
  <div><strong style="font-family:var(--hand);font-size:20px;color:var(--chalk)">SlateMind</strong><p>An AI blackboard teacher. Made in Faridabad, India.</p><p><a href="https://saksham-mogha.vercel.app/contact">Contact us</a></p></div>
- <ul><li><a href="/privacy">Privacy Policy</a></li><li><a href="/terms">Terms of Use</a></li><li><a href="/cookies">Cookies &amp; storage</a></li><li><a href="https://github.com/saksham456456/Slate-Mind" rel="noopener">Source code</a></li><li><a href="https://slate-mind.vercel.app">Launch the app</a></li></ul>
+ <ul><li><a href="/privacy">Privacy Policy</a></li><li><a href="/terms">Terms of Use</a></li><li><a href="/pitch">Pitch &amp; synopsis</a></li><li><a href="/cookies">Cookies &amp; storage</a></li><li><a href="https://github.com/saksham456456/Slate-Mind" rel="noopener">Source code</a></li><li><a href="https://slate-mind.vercel.app">Launch the app</a></li></ul>
 </div></footer>
 
 <script>
@@ -363,7 +366,7 @@ function toggle(){if(v.paused||v.ended){if(v.ended)v.currentTime=0;var r=v.play(
 function seekBy(s){v.currentTime=Math.min(dur(),Math.max(0,v.currentTime+s))}
 o.addEventListener("click",function(){d.showModal();if(v.ended)v.currentTime=0;var r=v.play();if(r&&r.catch)r.catch(ui);ui();tick()});
 $("vdx").addEventListener("click",function(){d.close()});
-d.addEventListener("click",function(e){if(e.target===d)d.close()});
+d.addEventListener("click",function(e){if(e.target===d)d.close()});d.addEventListener("contextmenu",function(e){e.preventDefault()});
 d.addEventListener("close",function(){v.pause();if(document.fullscreenElement&&document.exitFullscreen)document.exitFullscreen()});
 ["play","pause","ended","volumechange","loadedmetadata"].forEach(function(n){v.addEventListener(n,function(){ui();tick()})});
 v.addEventListener("timeupdate",tick);v.addEventListener("click",toggle);pp.addEventListener("click",toggle);big.addEventListener("click",toggle);

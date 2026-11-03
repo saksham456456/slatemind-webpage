@@ -10,7 +10,7 @@
 - Save a lesson as a PNG. No account needed; progress is stored in the browser.
 
 ## Demo
-- 54-second screen recording of the real app: https://slatemind-webpage.vercel.app/assets/demo.mp4 (sound effects only, no narration).
+- A 54-second screen recording of the real app is on the home page (sound effects only, no narration).
 
 ## Not available yet (planned)
 CBSE chapter paths for Classes 9-12, Hindi/Hinglish lessons, accounts with progress sync, shareable lesson clips, teacher mode, paid Pro plan. No paid plan exists today and nothing is for sale.
@@ -27,3 +27,5 @@ Topics typed by the user are sent to the SlateMind server and to Groq, the AI pr
 - Terms of Use: https://slatemind-webpage.vercel.app/terms
 - Cookies and storage: https://slatemind-webpage.vercel.app/cookies
 - Contact form: https://saksham-mogha.vercel.app/contact
+- Best used on a laptop or tablet; it is not designed for phones.
+- Pitch video and written synopsis (view only): https://slatemind-webpage.vercel.app/pitch
